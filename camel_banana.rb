@@ -30,7 +30,7 @@ class CamelBanana
 
   private ##################################
 
-  def fuel_per_mile(banana, i=0, s=true) # recursion of get_fuel_per_mile
+  def fuel_per_mile(banana, i=0, s=true)
     if banana > 0 && s
       fuel_per_mile(banana-@capacity,i+1,false)
     elsif !s && banana > 0
